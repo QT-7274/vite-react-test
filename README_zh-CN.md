@@ -20,18 +20,3 @@ npm install
 npm run dev
 # 在浏览器打开 http://localhost:5173
 ```
-
-### 生产环境打包
-
-```sh
-npm run build
-# 构建产物将存储在 build/ 目录中
-```
-
-## 部署
-
-使用Edgeone pages部署你自己的Vite项目
-
-[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.cloud.tencent.com/edgeone/pages/new?template=vite-react)
-
-更多模板: [从模板开始](https://console.cloud.tencent.com/edgeone/pages/create/template)
