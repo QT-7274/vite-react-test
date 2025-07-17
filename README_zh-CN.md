@@ -1,4 +1,4 @@
-# React + TypeScript + Vite 模板323243434
+# React + TypeScript + Vite 模板3232434343232
 
 这个模板提供了一个最小化配置，用于在Vite中运行React，包含热重载(HMR)和一些ESLint规则。
 
