@@ -1,9 +1,9 @@
-export default {
-  async onRequest(context) {
-    return new Response('Hello from Edge Function!', {
-      headers: {
-        'Content-Type': 'text/plain',
-      },
-    });
-  },
-};
+export function onRequest({request}) {
+
+  return new Response('response from node', {
+    headers: {
+      'content-type': 'application/json; charset=UTF-8',
+      'Access-Control-Allow-Origin': '*',
+    },
+  });
+}
