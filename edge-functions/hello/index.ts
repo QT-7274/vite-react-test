@@ -1,9 +1,13 @@
-export default {
-  async onRequest(context) {
-    return new Response('Hello from Edge Function!', {
-      headers: {
-        'Content-Type': 'text/plain',
-      },
-    });
-  },
-};
+export function onRequest({request}) {
+  const geo = request.eo.geo;
+  const res = JSON.stringify({
+    geo: geo,
+  });
+
+  return new Response(res, {
+    headers: {
+      'content-type': 'application/json; charset=UTF-8',
+      'Access-Control-Allow-Origin': '*',
+    },
+  });
+}
