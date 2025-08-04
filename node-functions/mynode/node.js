@@ -7,5 +7,5 @@ export function onRequest({request}) {
       'Access-Control-Allow-Origin': '*',
     },
   });
-}
+}343434
 //
