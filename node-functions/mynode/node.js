@@ -1,10 +1,8 @@
-export function onRequest({request}) {
-
-  const process = process.env;
-  return new Response('response from node, process.env: ' + JSON.stringify(process), {
-    headers: {
-      'content-type': 'application/json; charset=UTF-8',
-      'Access-Control-Allow-Origin': '*',
-    },
-  });
-}
+'use strict';
+exports.main_handler = async (event, context) => {
+    console.log("Hello World")
+    console.log(event)
+    console.log(event["non-exist"])
+    console.log(context)
+    return event
+};
